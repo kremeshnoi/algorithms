@@ -27,12 +27,12 @@ function binarySearch(data, target) {
 		if (data[mid].name === target) {
 			console.log(data[mid].name)
 			return console.log(`
-
-								The user's phone number was found: ${data[mid].phone};
-								Position of the searched element in the data list: ${mid};
-								Search steps done ${counter}.
-
-								`);
+			
+				The user's phone number was found: ${data[mid].phone};
+				Position of the searched element in the data list: ${mid};
+				Search steps done: ${counter}.
+				
+				`);
 		} else if (data[mid].name < target) {
 			start = mid + 1;
 		} else {

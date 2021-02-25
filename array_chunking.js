@@ -11,22 +11,22 @@ const chunkArray = (array, size) => {
 	for (let item of array) {
 		/*
 
-			'lastChunk' = is an array in an array, therefore:
-			1st iteration: 'lastChunk' is undefined, because there are no chunks here yet
+			"lastChunk" = is an array in an array, therefore:
+			1st iteration: "lastChunk" is undefined, because there are no chunks here yet
 
-			2nd iteration: 'lastChunk' already contains [[7691]]
+			2nd iteration: "lastChunk" already contains [[7691]]
 
 		 */
 		const lastChunk = chunks[chunks.length - 1]
 
 		/*
 
-			1st iteration: 'lastChunk' is undefined,
-			so the '!lastChunk' condition would work, and we push an array into array with item in it. [[7691]]
+			1st iteration: "lastChunk" is undefined,
+			so the "!lastChunk" condition would work, and we push an array into array with item in it. [[7691]]
 
-			2nd iteration: 'lastChunk' already contains data, so the '!lastChunk' would't work.
-			e.g. our 'size' = 9, so 'lastChunk.length' gonna be converted to false too.
-			Therefore, we go to our 'else' condition, and pushing element to our 'lastChunk'. [[7691, 9831]]
+			2nd iteration: "lastChunk" already contains data, so the "!lastChunk" would"t work.
+			e.g. our "size" = 9, so "lastChunk.length" gonna be converted to false too.
+			Therefore, we go to our "else" condition, and pushing element to our "lastChunk". [[7691, 9831]]
 
 			The logic repeats until the second argument of the first condition is triggered.
 

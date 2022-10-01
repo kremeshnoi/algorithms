@@ -23,7 +23,7 @@ function binarySearch(data, target) {
 		// The key point is to recalculate the middle of the list at each iteration.
 		let mid = Math.floor((start + end) / 2)
 
-		//String comparison.
+		// String comparison.
 		if (data[mid].name === target) {
 			console.log(data[mid].name)
 			return console.log(`
@@ -37,6 +37,7 @@ function binarySearch(data, target) {
 		else if (data[mid].name < target) start = mid + 1
 		else end = mid - 1
 	}
+	
 	return console.log("Data not found")
 }
 
